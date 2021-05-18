@@ -3,12 +3,20 @@ const display = document.getElementById("display");
 const input = document.querySelectorAll("input");
 let value = "";
 
+/* 
 switchBtn.addEventListener("click", ()=>{
     if(switchBtn.checked == true){
         document.body.setAttribute("data-theme", "dark");
+        console.log('I am dark');
     }else{
         document.body.setAttribute("data-theme", "");
+        console.log('I am light');
     }
+});
+ */
+
+switchBtn.addEventListener('click', () =>{
+    document.body.classList.toggle('dark');
 });
 
 input.forEach((e)=>{
